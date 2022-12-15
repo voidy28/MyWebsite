@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/69661b600f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="C:\Users\123ca\Downloads\logo1.jpg" class="logo">
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#contact">Contacts</a></li>
+                    <li><a href="#Pictures">Images</a></li>
+                </ul>
+            </nav>
+            <div class="header-text"></div>
+            <p>Pogi langs</p>
+            <h1>Hi, I'm <span>RC</span><br>from hindi malaman street ^_^ and I love chicken nuggets!</h1>
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images1/bigbog1.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me!</h1>
+                    <p>Hi! Welcome to my personal website! Do you want to know something about me?
+                        BTW My name is Roland Calara and I live in Hindi malaman street, and my hobby
+                        is playing basketball and badminton, because this sports even if I'm tired it 
+                        saves me from stress and focus more on my gameplay and think of nothing but
+                        the game instead of stressing yourself doing a lot of things try to play my 
+                        favorite sports.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('sports')">Sports</p>
+                        <p class="tab-links" onclick="opentab('talents')">Talents</p>
+                        <p class="tab-links" onclick="opentab('hobbies')">Hobbies</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="sports">
+                        <ul>
+                            <li><span>Badminton</span></li>
+                            <li><span>Basketball</span></li>
+                            <li><span>Volleyball</span></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="talents">
+                        <ul>
+                            <li><span>Singing</span></li>
+                            <li><span>Dancing</span></li>
+                            <li><span>Spoken Poetry</span></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="hobbies">
+                        <ul>
+                           <li><span>Playing Video Games</span></li>
+                          <li><span>Playing with my friends</span></li>
+                          <li><span>Eat a lot!</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="Exposing">
+        <div class="container"></div> 
+        <h1 class="sub-title">Exposing my self!</h1>
+        <div class="expose-list"></div>
+           <div>
+            <h2>Facts about me</h2>
+            <p>staying up all night just to forget something and not overthinking</p>
+           </div>
+           <div>
+            <h2>Simple things I love</h2>
+            <p>Asking me how's my day going, giving me bracele, appreciate small things</p>
+           </div>
+           <div>
+            <h2>My favorite</h2>
+            <p>Foods! Veggies! Games! Sports! Explore! Hiking! Biking!</p>
+           </div>
+    </div>
+    <div id="Pictures">
+        <div class="container">
+            <h1 class="sub-title">My pictures</h1>
+            <div class="picture-list">
+                <div class="pictures">
+                   <img src="images1/baby1.jpg">
+                   <div class="layer">
+                    <h3>My baby Pic</h3>
+                   <p>Thats me my mom took a shot of me when i was a baby i thought this
+                    picture is my little brother.
+                   </p>
+                   </div>
+                </div>
+                <div class="pictures">
+                    <img src="images1/aussie1.jpg">
+                    <div class="layer">
+                        <h3>Aussie Boy!</h3>
+                        <p>This is a picture of me and my little brother and big sister, this 
+                            photo was taken 4 yrs ago i think and it was so fun!
+                        </p>
+                    </div>
+                 </div>
+                 <div class="pictures">
+                    <img src="images1/bigboy2.jpg">
+                    <div class="layer">
+                        <h3>Mirror pics</h3>
+                        <p>This picture was taken on the adu game at MOA Arena.</p>
+                    </div>
+                 </div>
+            </div>
+        </div>
+    </div>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me!</h1>
+                    <p><i class="fas fa-paper-plane"></i>rccalara123@gmail.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i>09124256399</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/Voidy.28"><i class="fa-brands fa-facebook"></i></a>
+                    </div>
+                    <div class="social-icons">
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <img src="images1/ig1.jpg">
+                    </div>
+                    <div class="social-icons">
+                        <a href=""><i class="fa-brands fa-tiktok"></i></a>
+                        <img src="images1/tiktok1.jpg">
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="5" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tablink.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+<form name="submit-to-google-sheet">
+    <input name="email" type="email" placeholder="Email" required>
+    <button type="submit">Send</button>
+  </form>
+  
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyGeRcG8AGsaQXiO9OXjATHuJKNtnC3wDyN3RdUQSeRVLxr_ccF80jECWkB7GwyHZJzpA/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully!"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
